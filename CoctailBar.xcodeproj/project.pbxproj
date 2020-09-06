@@ -13,6 +13,13 @@
 		582E7FA42504B7E700D0A6FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582E7FA22504B7E700D0A6FA /* Main.storyboard */; };
 		582E7FA62504B7EF00D0A6FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582E7FA52504B7EF00D0A6FA /* Assets.xcassets */; };
 		582E7FA92504B7EF00D0A6FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582E7FA72504B7EF00D0A6FA /* LaunchScreen.storyboard */; };
+		582E7FB22504B88300D0A6FA /* SourceDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582E7FB12504B88300D0A6FA /* SourceDataManager.swift */; };
+		582E7FB52504B8BD00D0A6FA /* DataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582E7FB42504B8BD00D0A6FA /* DataProtocol.swift */; };
+		582E7FB72504B8CC00D0A6FA /* ListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582E7FB62504B8CC00D0A6FA /* ListProtocol.swift */; };
+		582E7FBA2504B8ED00D0A6FA /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582E7FB92504B8EC00D0A6FA /* Source.swift */; };
+		582E7FBC2504B8FC00D0A6FA /* Coctail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582E7FBB2504B8FC00D0A6FA /* Coctail.swift */; };
+		582E7FBE2504B91500D0A6FA /* CoctailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582E7FBD2504B91500D0A6FA /* CoctailList.swift */; };
+		582E7FC32504B97000D0A6FA /* DataViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582E7FC22504B97000D0A6FA /* DataViewCells.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		582E7FA52504B7EF00D0A6FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		582E7FA82504B7EF00D0A6FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		582E7FAA2504B7EF00D0A6FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		582E7FB12504B88300D0A6FA /* SourceDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceDataManager.swift; sourceTree = "<group>"; };
+		582E7FB42504B8BD00D0A6FA /* DataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProtocol.swift; sourceTree = "<group>"; };
+		582E7FB62504B8CC00D0A6FA /* ListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProtocol.swift; sourceTree = "<group>"; };
+		582E7FB92504B8EC00D0A6FA /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		582E7FBB2504B8FC00D0A6FA /* Coctail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coctail.swift; sourceTree = "<group>"; };
+		582E7FBD2504B91500D0A6FA /* CoctailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctailList.swift; sourceTree = "<group>"; };
+		582E7FC22504B97000D0A6FA /* DataViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewCells.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,70 @@
 		582E7F9B2504B7E700D0A6FA /* CoctailBar */ = {
 			isa = PBXGroup;
 			children = (
+				582E7FB02504B86600D0A6FA /* DataManagers */,
+				582E7FB32504B89800D0A6FA /* Protocols */,
+				582E7FB82504B8D400D0A6FA /* Models */,
+				582E7FBF2504B92400D0A6FA /* ViewCells */,
+				582E7FC42504B97A00D0A6FA /* ViewControllers */,
+				582E7FC52504B98D00D0A6FA /* Storyboards */,
 				582E7F9C2504B7E700D0A6FA /* AppDelegate.swift */,
 				582E7F9E2504B7E700D0A6FA /* SceneDelegate.swift */,
-				582E7FA02504B7E700D0A6FA /* ViewController.swift */,
-				582E7FA22504B7E700D0A6FA /* Main.storyboard */,
 				582E7FA52504B7EF00D0A6FA /* Assets.xcassets */,
-				582E7FA72504B7EF00D0A6FA /* LaunchScreen.storyboard */,
 				582E7FAA2504B7EF00D0A6FA /* Info.plist */,
 			);
 			path = CoctailBar;
+			sourceTree = "<group>";
+		};
+		582E7FB02504B86600D0A6FA /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				582E7FB12504B88300D0A6FA /* SourceDataManager.swift */,
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		582E7FB32504B89800D0A6FA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				582E7FB42504B8BD00D0A6FA /* DataProtocol.swift */,
+				582E7FB62504B8CC00D0A6FA /* ListProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		582E7FB82504B8D400D0A6FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				582E7FB92504B8EC00D0A6FA /* Source.swift */,
+				582E7FBB2504B8FC00D0A6FA /* Coctail.swift */,
+				582E7FBD2504B91500D0A6FA /* CoctailList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		582E7FBF2504B92400D0A6FA /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				582E7FC22504B97000D0A6FA /* DataViewCells.swift */,
+			);
+			path = ViewCells;
+			sourceTree = "<group>";
+		};
+		582E7FC42504B97A00D0A6FA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				582E7FA02504B7E700D0A6FA /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		582E7FC52504B98D00D0A6FA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				582E7FA22504B7E700D0A6FA /* Main.storyboard */,
+				582E7FA72504B7EF00D0A6FA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +207,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				582E7FB22504B88300D0A6FA /* SourceDataManager.swift in Sources */,
+				582E7FB52504B8BD00D0A6FA /* DataProtocol.swift in Sources */,
 				582E7FA12504B7E700D0A6FA /* ViewController.swift in Sources */,
+				582E7FBA2504B8ED00D0A6FA /* Source.swift in Sources */,
+				582E7FC32504B97000D0A6FA /* DataViewCells.swift in Sources */,
+				582E7FB72504B8CC00D0A6FA /* ListProtocol.swift in Sources */,
 				582E7F9D2504B7E700D0A6FA /* AppDelegate.swift in Sources */,
 				582E7F9F2504B7E700D0A6FA /* SceneDelegate.swift in Sources */,
+				582E7FBE2504B91500D0A6FA /* CoctailList.swift in Sources */,
+				582E7FBC2504B8FC00D0A6FA /* Coctail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +367,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = st.eugene.CoctailBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -309,6 +386,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = st.eugene.CoctailBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
